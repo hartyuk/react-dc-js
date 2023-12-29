@@ -34,7 +34,7 @@
     ]
   },
   "peerDependencies": {
-    "react": "^18.2.6"
+    "react": ">=16.8.0"
   },
   "optionalDependencies": {
     "crossfilter2": "^1.5.2"
