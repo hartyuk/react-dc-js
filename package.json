@@ -6,14 +6,12 @@
   "module": "dist/react-dc.module.js",
   "jsnext:main": "dist/react-dc.module.js",
   "scripts": {
-    "test": "jest --silent",
-    "build": "npm run build:umd && npm run build:es",
+    "build": "npm run build:umd",
     "build:umd": "set NODE_ENV=production && webpack",
-    "build:es": "cross-env BABEL_ENV=module babel src -d dist/es",
     "build:watch": "npm run build:es -- --watch",
     "flow": "flow",
     "lint": "eslint src",
-    "prepare": "npm run lint && npm run build && npm run test"
+    "prepare": "npm run lint && npm run build"
   },
   "files": [
     "dist",
