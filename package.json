@@ -9,7 +9,7 @@
     "test": "jest --silent",
     "build": "npm run build:umd && npm run build:es",
     "build:umd": "set NODE_ENV=production && webpack",
-    "build:es": "BABEL_ENV=module babel src -d dist/es",
+    "build:es": "cross-env BABEL_ENV=module babel src -d dist/es",
     "build:watch": "npm run build:es -- --watch",
     "flow": "flow",
     "lint": "eslint src",
